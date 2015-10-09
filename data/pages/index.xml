@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 06 Oct 2015 09:35:11 +0300</pubDate><title><![CDATA[Основная информация]]></title><url><![CDATA[index]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Home]]></menu><menuOrder><![CDATA[1]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;div class=&quot;container&quot;&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-xs-11 col-md-5 info-block text-justify&quot;&gt;
+			&lt;h3&gt;Добро пожаловать на сайт &quot;Электронного детектива&quot;&lt;/h3&gt;
+			&lt;p&gt;На нашем сайте содержатся логические задачи. Решая их, вы сможете почувствовать себя детективом. Расследуйте дело, найдите преступника, а наш электронный детектив поможет вам в этом, проверив вас. Если вам будет интересно с помощью чего наш электронный детектив решает поставленные логические задачи в считанные секунды, то посетите разделs сайта &quot;Помощь&quot; и &quot;Теория&quot;. Приятно провести время на нашем сайте!&lt;/p&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-xs-11 col-md-5 col-md-offset-1 info-block text-center&quot;&gt;
+			&lt;h3&gt;Над проектом работали:&lt;/h3&gt;
+			&lt;p&gt;Данилов Константин&lt;/p&gt;
+			&lt;p&gt;Мержанова Анастасия&lt;/p&gt;
+			&lt;p&gt;Николенко Александр&lt;/p&gt;
+			&lt;p&gt;Табаков Андрей&lt;/p&gt;
+			&lt;p&gt;Блинов Виталий&lt;/p&gt;
+			&lt;p&gt;Митряйкин Максим&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

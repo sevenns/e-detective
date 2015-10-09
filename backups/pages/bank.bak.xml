@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 06 Oct 2015 00:01:47 +0300</pubDate><title><![CDATA[Банк задач]]></title><url><![CDATA[bank]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Банк задач]]></menu><menuOrder><![CDATA[1]]></menuOrder><menuStatus><![CDATA[Y]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[]]></parent><content><![CDATA[&lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center&quot;&gt;
+	&lt;a href=&quot;index.php?id=safe_robbery&quot;&gt;
+		&lt;img src=&quot;data/uploads/safe_robbery.jpg&quot; alt=&quot;Ограбление сейфа&quot; class=&quot;img-responsive center-block&quot;&gt;
+	&lt;/a&gt;
+	&lt;h4&gt;Ограбление сейфа&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center&quot;&gt;
+	&lt;a href=&quot;index.php?id=ancient_scroll&quot;&gt;
+		&lt;img src=&quot;data/uploads/ancient-scroll.jpg&quot; alt=&quot;Кража древнего свитка&quot; class=&quot;img-responsive center-block&quot;&gt;
+	&lt;/a&gt;
+	&lt;h4&gt;Кража древнего свитка&lt;/h4&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center&quot;&gt;
+	&lt;a href=&quot;index.php?id=cats_stealing&quot;&gt;
+		&lt;img src=&quot;data/uploads/cats-stealing.jpg&quot; alt=&quot;Кража кота Мурзика&quot; class=&quot;img-responsive center-block&quot;&gt;
+	&lt;/a&gt;
+	&lt;h4&gt;Кража кота Мурзика&lt;/h4&gt;
+&lt;/div&gt;
+
+&lt;?php pagify_set_size(&#039;1&#039;) ?&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Mon, 05 Oct 2015 23:09:20 +0300</pubDate><title><![CDATA[Ограбление сейфа]]></title><url><![CDATA[safe_robbery]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Ограбление сейфа]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[bank]]></parent><content><![CDATA[&lt;div class=&quot;list&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;!N&lt;/li&gt;
+		&lt;li&gt;!(!LB &amp; (LC | LD))&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;solveWindow&quot;&gt;
+	&lt;div id=&quot;solve&quot;&gt;&lt;/div&gt;
+	&lt;a href=&quot;#&quot; onclick=&quot;closeSolution()&quot;&gt;Закрыть окно&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control-panel hiddex-xs&quot;&gt;
+&lt;button class=&quot;solve-btn&quot; onclick=&quot;javascript:solveButton();&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-check&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class=&quot;full-picture-btn text-center&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-zoom-in&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;help-btn text-center&quot;&gt;
+     &lt;a href=&quot;data/uploads/article_b.pdf&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control-panel-xs visible-xs&quot;&gt;
+&lt;button class=&quot;solve-btn&quot; onclick=&quot;javascript:solveButton();&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-check&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class=&quot;full-picture-btn text-center&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-zoom-in&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;help-btn text-center&quot;&gt;
+     &lt;a href=&quot;data/uploads/article_b.pdf&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;img class=&quot;full-picture&quot; src=&quot;data/uploads/safe_robbery.jpg&quot;&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+	&lt;div id=&quot;content&quot;&gt;
+		&lt;div id=&quot;picture&quot; class=&quot;col-xs-12 col-lg-7&quot; style=&quot;&quot;&gt;
+			&lt;img alt=&quot;&quot; class=&quot;mainPicture&quot; data-height=&quot;475&quot; data-width=&quot;1200&quot; src=&quot;data/uploads/safe_robbery.jpg&quot;&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;131&quot; data-width=&quot;175&quot; data-x=&quot;25&quot; data-y=&quot;20&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;80&quot; data-width=&quot;105&quot; data-x=&quot;815&quot; data-y=&quot;240&quot;&gt;&lt;/div&gt;
+			&lt;h2&gt;История&lt;/h2&gt;
+			Был вскрыт сейф, сигнализация не сработала. Доступ к отключению сигнализации утром имеет только Алекс. Поэтому &lt;span data-expression=&quot;LogicImplication(LogicAND(%S%,LogicNOT(%N%)),%A%)&quot;&gt;если сигнализация работала и преступление произошло не ночью, то Алекс преступник.&lt;/span&gt; &lt;span data-expression=&quot;LogicImplication(%LB%,%S%)&quot;&gt;Брюс всегда включает сигнализацию, когда уходит с работы&lt;/span&gt;, в отличие от остальных - &lt;span data-expression=&quot;LogicImplication(LogicNOT(%LB%),LogicNOT(%S%))&quot;&gt;остальные постоянно забывают это делать&lt;/span&gt;. &lt;span data-expression=&quot;LogicOR(%LB%,LogicOR(%LC%,%LD%))&quot;&gt;Вчера на работе были Карл, Дилан и Брюс&lt;/span&gt; &lt;span data-expression=&quot;LogicAND(%MC%,LogicAND(%MD%,%MA%))&quot;&gt;Сегодня утром на работу пришли Алекс, Карл и Дилан&lt;/span&gt; &lt;span data-expression=&quot;LogicAND(LogicNOT(%LB%),LogicOR(%LC%,%LD%))&quot;&gt;Вчера было чётное число, по чётным числам Брюс уезжает раньше всех в типографию.&lt;/span&gt; По нечетным происходит наоборот.&lt;span data-expression=&quot;%N%&quot;&gt;Ночью камеры не работали и сейф не контролировался. &lt;/span&gt;&lt;span data-expression=&quot;LogicImplication(LogicAND(%LC%,%MC%),%C%)&quot;&gt;Если Карл ушёл последним и пришёл утром, то он преступник&lt;/span&gt; &lt;span data-expression=&quot;LogicImplication(LogicAND(%LB%,%N%),%B%)&quot;&gt;Если Брюс ушёл последним и преступление произошло ночью, то он преступник.&lt;/span&gt;&lt;span data-expression=&quot;LogicImplication(LogicAND(%LD%,%MD%),%D%)&quot;&gt;Если Дилан ушёл последним и пришёл утром, то он преступник.&lt;/span&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;workplace col-xs-12 col-lg-5&quot;&gt;
+			&lt;div id=&quot;variables&quot; class=&quot;col-xs-12 col-sm-6&quot;&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Алекс не виновен&quot; data-name=&quot;A&quot;&gt;Алекс - преступник&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Брюс не виновен&quot; data-name=&quot;B&quot;&gt;Брюс - преступник&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Карл не виновен&quot; data-name=&quot;C&quot;&gt;Карл - преступник&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Дилан не виновен&quot; data-name=&quot;D&quot;&gt;Дилан - преступник&lt;/span&gt;
+				&lt;span data-inversion=&quot;Брюс ушёл из офиса не последним&quot; data-name=&quot;LB&quot;&gt;Брюс ушёл из офиса последним&lt;/span&gt;
+				&lt;span data-inversion=&quot;Карл ушёл из офиса не последним&quot; data-name=&quot;LC&quot;&gt;Карл ушёл из офиса последним&lt;/span&gt;
+				&lt;span data-inversion=&quot;Дилан ушёл из офиса не последним&quot; data-name=&quot;LD&quot;&gt;Дилан ушёл из офиса последним&lt;/span&gt;
+				&lt;span data-inversion=&quot;Преступление произошло не ночью&quot; data-name=&quot;N&quot;&gt;Преступление произошло ночью&lt;/span&gt;
+				&lt;span data-inversion=&quot;Алекс пришёл на работу не утром&quot; data-name=&quot;MA&quot;&gt;Алекс пришёл на работу утром&lt;/span&gt;
+				&lt;span data-inversion=&quot;Карл пришёл на работу не утром&quot; data-name=&quot;MC&quot;&gt;Карл пришёл на работу утром&lt;/span&gt;
+				&lt;span data-inversion=&quot;Дилан пришёл на работу не утром&quot; data-name=&quot;MD&quot;&gt;Дилан пришёл на работу утром&lt;/span&gt;
+				&lt;span data-inversion=&quot;Сигнализация не работала&quot; data-name=&quot;S&quot;&gt;Сигнализация работала&lt;/span&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;expressions&quot; class=&quot;col-xs-12 col-sm-6&quot;&gt;
+				&lt;p class=&quot;tips text-center&quot;&gt;Логические выражения&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;proofs&quot; class=&quot;col-xs-12&quot;&gt;
+				&lt;p class=&quot;tips text-center&quot;&gt;Доказательства&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

@@ -1,0 +1,200 @@
+body {
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.workplace {
+	background-color: rgb(240,248,255);
+	overflow-y: scroll;
+}
+
+#solveWindow *::first-letter {
+	text-transform: uppercase;
+}
+
+#variables span::first-letter,
+#proofs span::first-letter {
+	text-transform: uppercase;
+}
+
+#proofs p,
+#expressions p {
+	font-weight: 600;
+}
+
+.check {
+	width: auto;
+	border: none;
+	padding: 0 10px;
+	background-color: rgb(88,153,206);
+	color: rgb(255,255,255);
+	cursor: pointer;
+	float: right;
+	outline: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.check:hover {
+	background-color: #66CDAA;
+}
+
+p.tips {
+	margin: 0;
+	padding: 20px 0;
+}
+		
+#variables,
+#expressions,
+#proofs {
+	//border: 1px solid red;
+	padding: 5px 10px;
+}
+
+#variables p,
+#expressions p,
+#proofs p {
+	text-indent: 0;
+}
+
+#expressions div,
+#picture .expPicture,
+#proofs div {
+	cursor: pointer;
+}
+
+#variables h6 {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-family: cursive;
+	background-color: rgb(88,153,206);
+	color: rgb(255,255,255);
+	padding: 2px;
+}
+
+#picture span:hover,
+#picture .over {
+	background: rgb(88,153,206);
+	color: rgb(255,255,255);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#picture {
+	position: relative;
+	overflow-y: scroll;
+	padding: 0;
+	cursor: default;
+}
+
+#expressions .over,
+#proofs .over {
+	background-color: rgb(88,153,206);
+	color: rgb(255,255,255);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.expPicture {
+	position: absolute;
+	border: 3px none red;
+}
+
+#picture .used {
+	border: 2px solid rgb(153, 255, 153);
+	background-color: rgba(153, 255, 153,.4);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#picture .selected {
+	border: 2px solid rgb(88,153,206);
+	background-color: rgba(88,153,206,.2);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.mainPicture {
+	padding-right: 10px;
+	width: 100%;
+}
+#overlay {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.95;
+	z-index: 10004;
+}
+
+#solveWindow {
+	position: fixed;
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	z-index: 10006;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+	background-color: rgba(255,255,255,.95)
+}
+
+#solveWindow p {
+	text-indent: 0;
+}
+
+.hasLegend {
+	margin-left: 20px;
+}
+
+.hasLegend:hover {
+	background-color: rgb(88,153,206);
+	color: rgb(255,255,255);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.legend {
+	display: none;
+}
+.tooltip {
+	font-family: UbuntuLight, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	position:absolute;
+	z-index: 11000;
+	left:-2000px;
+	background-color: rgb(88,153,206);
+	padding: 5px 10px;
+	border:none;
+	outline: none;
+	width:250px;
+	-webkit-box-shadow: 0 5px 15px 2px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 5px 15px 2px rgba(0,0,0,.4);
+	-o-box-shadow: 0 5px 15px 2px rgba(0,0,0,.4);
+	box-shadow: 0 5px 15px 2px rgba(0,0,0,.4);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+.tooltip p {
+	text-indent: 0;
+	color: rgb(255,255,255);
+}
+
+.full-picture {
+	display: none;
+	position: fixed;
+	width: 100%;
+	z-index: 10005;
+	top: 0px;
+	left: 0px;
+}

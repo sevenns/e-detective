@@ -1,0 +1,158 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.workplace {
+	background-color: #F0F8FF;
+	min-height: 300px;
+	padding-bottom: 20px;
+}
+
+#solveWindow *::first-letter {
+	text-transform: uppercase;
+}
+
+#variables span,
+#proofs span {
+	display: inline-block;
+}
+
+#variables span::first-letter,
+#proofs span::first-letter {
+	text-transform: uppercase;
+}
+
+#proofs p,
+#expressions p {
+	font-weight: 600;
+}
+
+.check {
+	width: auto;
+	border: none;
+	height: 35px;
+	padding: 0 10px;
+	background: rgb(88,153,206);
+	cursor: pointer;
+	float: right;
+}
+
+.check:hover {
+	background-color: #66CDAA;
+}
+
+p.tips {
+	line-height:  50px;
+	padding: 0;
+	margin-bottom: 0;
+}
+		
+#variables,
+#expressions,
+#proofs {
+	border: 0px solid red;
+}
+		
+#variables div,
+#expressions div,
+#proofs div {
+	padding-left: 10px;
+}
+
+#expressions div,
+#picture div,
+#picture .expPicture,
+#proofs div {
+	cursor: pointer;
+}
+
+#variables h6 {
+	display: inline;
+	margin:0px;
+	padding: 0px 10px 0 0;
+	font-family: cursive;
+	color: red;
+}
+
+#picture span:hover,
+#picture .over {
+	background: yellow;
+}
+
+#picture {
+	position: relative;
+}
+
+#expressions .over,
+#proofs .over {
+	background: yellow;
+}
+
+.expPicture {
+	position: absolute;
+	border: 3px none red;
+}
+
+#picture .used {
+	border: 3px solid green;
+}
+
+#picture .selected {
+	border: 3px solid yellow;
+}
+.mainPicture {
+	padding-right: 10px;
+}
+#overlay {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	opacity: 0.95;
+	z-index: 1000;
+}
+
+#welcome {
+	width: 75%;
+	margin: auto;
+}
+
+#solveWindow {
+	position: absolute;
+	z-index: 1002;
+	top: 0px;
+	left: 0px;
+	padding: 20px;
+}
+
+.hasLegend {
+	margin-left: 50px;
+}
+
+.hasLegend:hover {
+	background-color: yellow;
+}
+
+.legend {
+	display: none;
+}
+.tooltip {
+	position:absolute;
+	z-index: 1100;
+	left:-2000px;
+	background:#dedede;
+	padding:5px;
+	border:1px solid #fff;
+	width:250px;
+}
+
+.tooltip p {
+	margin:0;
+	padding:0;
+	color:#fff;
+	background:#222;
+	padding:2px 7px;
+}

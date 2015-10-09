@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Mon, 05 Oct 2015 20:55:42 +0300</pubDate><title><![CDATA[Кража древнего свитка]]></title><url><![CDATA[ancient_scroll]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Кража древнего свитка]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[bank]]></parent><content><![CDATA[&lt;div class=&quot;list&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;!Gm&lt;/li&gt;
+		&lt;li&gt;!X&lt;/li&gt;
+		&lt;li&gt;!Mv&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;solveWindow&quot;&gt;
+	&lt;div id=&quot;solve&quot;&gt;&lt;/div&gt;
+	&lt;a href=&quot;#&quot; onclick=&quot;closeSolution()&quot;&gt;Закрыть окно&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control-panel&quot;&gt;
+&lt;button class=&quot;solve-btn&quot; onclick=&quot;javascript:solveButton();&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-check&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class=&quot;full-picture-btn text-center&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-zoom-in&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;help-btn text-center&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;img class=&quot;full-picture&quot; src=&quot;data/uploads/ancient-scroll.jpg&quot;&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+	&lt;div id=&quot;content&quot;&gt;
+		&lt;div id=&quot;picture&quot; class=&quot;col-xs-12 col-lg-7&quot; style=&quot;&quot;&gt;
+			&lt;img alt=&quot;&quot; class=&quot;mainPicture&quot; data-height=&quot;475&quot; data-width=&quot;1200&quot; src=&quot;data/uploads/ancient-scroll.jpg&quot;&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;60&quot; data-width=&quot;90&quot; data-x=&quot;670&quot; data-y=&quot;170&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;110&quot; data-width=&quot;120&quot; data-x=&quot;900&quot; data-y=&quot;280&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;110&quot; data-width=&quot;100&quot; data-x=&quot;310&quot; data-y=&quot;300&quot;&gt;&lt;/div&gt;
+			&lt;h2&gt;История&lt;/h2&gt;
+			Из музея исчез древний и очень ценный свиток. На следующий день состоялось расследование.&lt;br /&gt;
+			&lt;span data-expression=&quot;LogicOR(LogicOR(%V%,%E%),LogicOR(%G%,%M%))&quot;&gt;В последнее время музей посещали всего несколько ребят из младшей школы, расположенной неподалёку: Гриша, Миша, Эля и Вова - забрал свиток кто-то из них.&lt;/span&gt; Никто из ребят не признаётся, поэтому начнём расследование!&lt;br /&gt;
+			&lt;br /&gt;
+			Всем известно, что Эля ходит в музей каждый день &lt;span data-expression=&quot;%Me%&quot;&gt;и в тот день была тоже&lt;/span&gt;, а Вова заходит в музей только после занятий по физкультуре, которые проходят по чётным дням недели, поэтому в музее его всегда видят с мешком для спортивной формы. Гриша и Миша враждуют друг с другом из-за Эли, поэтому в музей до сегодняшнего дня приходили только в разные дни, то есть &lt;span data-expression=&quot;LogicImplication(%Mm%,LogicNOT(%Mg%))&quot;&gt;Гриша никогда не посещал музей, когда там был Миша&lt;/span&gt;, &lt;span data-expression=&quot;LogicImplication(%Mg%, LogicNOT(%Mm%))&quot;&gt;а Миша никогда не посещал музей, когда там был Гриша.&lt;/span&gt;При этом каждый из них обязательно появляется в музее, когда там есть Эля. Пару дней назад Миша и Гриша подрались из-за неё, и последние два раза в музей с ней ходил победитель. Известно, что победитель вышел из драки с меньшим уроном для внешнего вида. То есть, &lt;span data-expression=&quot;LogicImplication(LogicNOT(%Gm%),LogicImplication(%Me%,%Mm%))&quot;&gt;если Миша победитель и Эля была в музее в день продажи, то Миша был в музее&lt;/span&gt;, &lt;span data-expression=&quot;LogicImplication(%Gm%,LogicImplication(%Me%,%Mg%))&quot;&gt;если Гриша победитель и Эля была в музее в день продажи, то Гриша был в музее.&lt;/span&gt;&lt;br /&gt;
+			&lt;br /&gt;
+			После опроса одноклассников и работников музея удалось собрать некоторую информацию об участниках этого происшествия. Вам нужно отвергнуть ложную и подтвердить правильную, так чтобы ответ однозначно указал на виновника:&lt;br /&gt;
+			- &lt;span data-expression=&quot;%Mv%&quot;&gt;«Вова был вчера в музее (охранник говорит, что в день пропажи в музее он видел мальчика с мешком)».&lt;/span&gt;&lt;br /&gt;
+			&lt;!-- «Одноклассники Вовы считают, что если он был в день пропажи в музее, то он и взял свиток».&lt;br&gt; --&gt;- &lt;span data-expression=&quot;LogicImplication(LogicNOT(%X%),LogicNOT(%E%))&quot;&gt;«Также одноклассники считают, что Эля не брала свиток, потому что она хорошая девочка&lt;/span&gt;».&lt;br /&gt;
+			- &lt;span data-expression=&quot;%X%&quot;&gt;«Однако кое-кто утверждает, что Эля плохо учится, да и вообще она плохая девочка».&lt;/span&gt;&lt;br /&gt;
+			- &lt;span data-expression=&quot;LogicImplication(LogicAND(%Me%,%Gm%), LogicOR(%E%,%G%))&quot;&gt;«Если Эля была в музее в день пропажи и Гриша победил Мишу, то в пропаже свитка замешан Гриша или Эля».&lt;/span&gt;&lt;br /&gt;
+			- &lt;span data-expression=&quot;LogicImplication(LogicAND(%Me%,LogicNOT(%Gm%)), LogicOR(%E%,%M%))&quot;&gt;«Если же Эля была в музее в день пропажи и при этом Миша победил Гришу, то в пропаже свитка замешан Миша или Эля».&lt;/span&gt;&lt;br /&gt;
+			- &lt;span data-expression=&quot;%Gm%&quot;&gt;«В схватке Гриша победил Мишу (об этом кто-то сообщил по секрету)».&lt;/span&gt;&lt;br /&gt;
+			&lt;br /&gt;
+			У кого же этот ценный и древний экспонат?
+		&lt;/div&gt;
+
+		&lt;div class=&quot;workplace col-xs-12 col-lg-5&quot;&gt;
+			&lt;div id=&quot;variables&quot; class=&quot;col-xs-12 col-sm-6&quot;&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Гриша не забрал свиток&quot; data-name=&quot;G&quot;&gt;Гриша забрал свиток&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Миша не забрал свиток&quot; data-name=&quot;M&quot;&gt;Миша забрал свиток&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Эля не забрала свиток&quot; data-name=&quot;E&quot;&gt;Эля забрала свиток&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Вова не забрал свиток&quot; data-name=&quot;V&quot;&gt;Вова забрал свиток&lt;/span&gt;
+				&lt;span data-inversion=&quot;Вова не был в музее в день пропажи&quot; data-name=&quot;Mv&quot;&gt;Вова был в музее в день пропажи&lt;/span&gt;
+				&lt;span data-inversion=&quot;Гриша не был в музее в день пропажи&quot; data-name=&quot;Mg&quot;&gt;Гриша был в музее в день пропажи&lt;/span&gt;
+				&lt;span data-inversion=&quot;Миша не был в музее в день пропажи&quot; data-name=&quot;Mm&quot;&gt;Миша был в музее в день пропажи&lt;/span&gt;
+				&lt;span data-inversion=&quot;Эля не была в музее в день пропажи&quot; data-name=&quot;Me&quot;&gt;Эля была в музее в день пропажи&lt;/span&gt;
+				&lt;span data-inversion=&quot;Эля учится хорошо, да и вообще хорошая девочка&quot; data-name=&quot;X&quot;&gt;Эля учится плохо, да и вообще плохая девочка&lt;/span&gt;
+				&lt;span data-inversion=&quot;Миша победил Гришу&quot; data-name=&quot;Gm&quot;&gt;Гриша победил Мишу&lt;/span&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;expressions&quot; class=&quot;col-xs-12 col-sm-6&quot;&gt;
+				&lt;p class=&quot;tips text-center&quot;&gt;Логические выражения&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;proofs&quot; class=&quot;col-xs-12&quot;&gt;
+				&lt;p class=&quot;tips text-center&quot;&gt;Доказательства&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

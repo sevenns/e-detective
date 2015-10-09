@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Mon, 05 Oct 2015 23:22:55 +0300</pubDate><title><![CDATA[Кража кота Мурзика]]></title><url><![CDATA[cats_stealing]]></url><meta><![CDATA[]]></meta><metad><![CDATA[]]></metad><menu><![CDATA[Кража кота Мурзика]]></menu><menuOrder><![CDATA[0]]></menuOrder><menuStatus><![CDATA[]]></menuStatus><template><![CDATA[template.php]]></template><parent><![CDATA[bank]]></parent><content><![CDATA[&lt;div class=&quot;list&quot;&gt;
+	&lt;ul&gt;
+		&lt;li&gt;!(S &amp; M)&lt;/li&gt;
+		&lt;li&gt;!E&lt;/li&gt;
+		&lt;li&gt;!H&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;solveWindow&quot;&gt;
+	&lt;div id=&quot;solve&quot;&gt;&lt;/div&gt;
+	&lt;a href=&quot;#&quot; onclick=&quot;closeSolution()&quot;&gt;Закрыть окно&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;control-panel hidden-xs&quot;&gt;
+&lt;button class=&quot;solve-btn&quot; onclick=&quot;javascript:solveButton();&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-check&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class=&quot;full-picture-btn text-center&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-zoom-in&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;help-btn text-center&quot;&gt;
+     &lt;a href=&quot;data/uploads/shutka.pdf&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;control-panel-xs visible-xs&quot;&gt;
+&lt;button class=&quot;solve-btn&quot; onclick=&quot;javascript:solveButton();&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-check&quot;&gt;&lt;/span&gt;
+&lt;/button&gt;
+&lt;div class=&quot;full-picture-btn text-center&quot;&gt;
+     &lt;span class=&quot;glyphicon glyphicon-zoom-in&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;help-btn text-center&quot;&gt;
+     &lt;a href=&quot;data/uploads/shutka.pdf&quot; target=&quot;_blank&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-info-sign&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;img class=&quot;full-picture&quot; src=&quot;data/uploads/cats-stealing.jpg&quot;&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+	&lt;div id=&quot;content&quot;&gt;
+		&lt;div id=&quot;picture&quot; class=&quot;col-xs-12 col-lg-7&quot; style=&quot;&quot;&gt;
+			&lt;img alt=&quot;&quot; class=&quot;mainPicture&quot; data-height=&quot;475&quot; data-width=&quot;1200&quot; src=&quot;data/uploads/cats-stealing.jpg&quot;&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;130&quot; data-width=&quot;160&quot; data-x=&quot;960&quot; data-y=&quot;50&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;90&quot; data-width=&quot;140&quot; data-x=&quot;250&quot; data-y=&quot;350&quot;&gt;&lt;/div&gt;
+			&lt;div class=&quot;expPicture&quot; data-height=&quot;90&quot; data-width=&quot;125&quot; data-x=&quot;570&quot; data-y=&quot;80&quot;&gt;&lt;/div&gt;
+			&lt;h2&gt;История&lt;/h2&gt;
+			В квартире живут 4 студентки: Лиза, Света, Галя и Ксюша. Не все они одинаково прилежны, но Света всегда ходит на лекции. У Ксюши есть кот Мурзик. Еду в миску коту накладывает тот, кто первым возвращается вечером с учёбы, и Мурзик сразу съедает весь корм. Одна из соседок решила устроить Ксюше во вторник первоапрельский розыгрыш и спрятала кота в другом помещении. Ксюша должна угадать, кто похитил Мурзика.&lt;br&gt;
+			У неё есть некоторые предположения, и она хочет отвергнуть ложные из них и подтвердить правильные, так чтобы ответ однозначно указал на похитительницу. Вот что она думает:&lt;br&gt;
+			&lt;span data-expression=&quot;LogicOR(%S%,LogicOR(%G%,%L%))&quot;&gt;«Наверняка, подшутил кто-то из моих соседок».&lt;/span&gt;&lt;br&gt;
+			&lt;span data-expression=&quot;LogicAND(%S%,%M%)&quot;&gt;«Первое, что приходит на ум — это сделала Света в первой половине дня».&lt;/span&gt;&lt;br&gt;
+			&lt;span data-expression=&quot;%H%&quot;&gt;«Помнится, что Галя вчера была дома».&lt;/span&gt;&lt;br&gt;
+			&lt;span data-expression=&quot;%E%&quot;&gt;«Кто-то успел покормить кота до его пропажи»&lt;/span&gt;&lt;br&gt;
+			&lt;span data-expression=&quot;LogicEquivalence(LogicNOT(%E%),%M%)&quot; style=&quot;display:none;&quot;&gt;&lt;/span&gt;&lt;br&gt;
+			&lt;span data-expression=&quot;LogicImplication(%G%,%H%)&quot; style=&quot;display:none;&quot;&gt;&lt;/span&gt;
+		&lt;/div&gt;
+
+		&lt;div class=&quot;workplace col-xs-12 col-lg-5&quot;&gt;
+			&lt;div id=&quot;variables&quot; class=&quot;col-xs-12 col-sm-6&quot;&gt;
+				&lt;span data-inversion=&quot;Галя не была дома в день похищения&quot; data-name=&quot;H&quot;&gt;Галя была дома в день похищения&lt;/span&gt;
+				&lt;span data-inversion=&quot;Мурзик не был покормлен перед пропажей&quot; data-name=&quot;E&quot;&gt;Мурзик был покормлен перед пропажей&lt;/span&gt;
+				&lt;span data-inversion=&quot;Мурзика не похищали вчера до обеда&quot; data-name=&quot;M&quot;&gt;Мурзика похитили вчера до обеда&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Света не похищала кота&quot; data-name=&quot;S&quot;&gt;Света похитила кота&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Галя не похищала кота&quot; data-name=&quot;G&quot;&gt;Галя похитила кота&lt;/span&gt;
+				&lt;span data-final=&quot;true&quot; data-inversion=&quot;Лиза не похищала кота&quot; data-name=&quot;L&quot;&gt;Лиза похитила кота&lt;/span&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;expressions&quot; class=&quot;col-xs-12 col-sm-6&quot;&gt;
+				&lt;p class=&quot;tips text-center&quot;&gt;Логические выражения&lt;/p&gt;
+			&lt;/div&gt;
+
+			&lt;div id=&quot;proofs&quot; class=&quot;col-xs-12&quot;&gt;
+				&lt;p class=&quot;tips text-center&quot;&gt;Доказательства&lt;/p&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;]]></content><private><![CDATA[]]></private><author><![CDATA[admin]]></author></item>

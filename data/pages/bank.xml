@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<item><pubDate>Tue, 06 Oct 2015 00:02:33 +0300</pubDate><title>Банк задач</title><url>bank</url><meta></meta><metad></metad><menu>Банк задач</menu><menuStatus>Y</menuStatus><template>template.php</template><parent></parent><content>&amp;lt;div class=&amp;quot;col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center&amp;quot;&amp;gt;
+	&amp;lt;a href=&amp;quot;index.php?id=safe_robbery&amp;quot;&amp;gt;
+		&amp;lt;img src=&amp;quot;data/uploads/safe_robbery.jpg&amp;quot; alt=&amp;quot;Ограбление сейфа&amp;quot; class=&amp;quot;img-responsive center-block&amp;quot;&amp;gt;
+	&amp;lt;/a&amp;gt;
+	&amp;lt;h4&amp;gt;Ограбление сейфа&amp;lt;/h4&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center&amp;quot;&amp;gt;
+	&amp;lt;a href=&amp;quot;index.php?id=ancient_scroll&amp;quot;&amp;gt;
+		&amp;lt;img src=&amp;quot;data/uploads/ancient-scroll.jpg&amp;quot; alt=&amp;quot;Кража древнего свитка&amp;quot; class=&amp;quot;img-responsive center-block&amp;quot;&amp;gt;
+	&amp;lt;/a&amp;gt;
+	&amp;lt;h4&amp;gt;Кража древнего свитка&amp;lt;/h4&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;col-xs-12 col-sm-12 col-md-12 col-lg-6 text-center&amp;quot;&amp;gt;
+	&amp;lt;a href=&amp;quot;index.php?id=cats_stealing&amp;quot;&amp;gt;
+		&amp;lt;img src=&amp;quot;data/uploads/cats-stealing.jpg&amp;quot; alt=&amp;quot;Кража кота Мурзика&amp;quot; class=&amp;quot;img-responsive center-block&amp;quot;&amp;gt;
+	&amp;lt;/a&amp;gt;
+	&amp;lt;h4&amp;gt;Кража кота Мурзика&amp;lt;/h4&amp;gt;
+&amp;lt;/div&amp;gt;</content><private></private><author>admin</author><menuOrder><![CDATA[2]]></menuOrder></item>
