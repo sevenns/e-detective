@@ -1,0 +1,28 @@
+{
+  "name": "e-detective",
+  "main": "index.js",
+  "license": "ISC",
+  "author": "e-detective.ru",
+  "homepage": "e-detective.ru",
+  "dependencies": {
+  },
+  "keywords": [
+    "e-detective"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./src/libs/",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+  	"jquery": "1.9.1",
+  	"bourbon": "^4.2.7",
+    "owl-carousel": "^1.3.2",
+    "jquery-slimscroll": "^1.3.8",
+    "intense-images": "^1.0.0",
+    "font-awesome": "^4.6.3"
+  }
+}
