@@ -26,3 +26,16 @@ For work bower you need to install [git] (https://git-scm.com/downloads) on your
 For non-developers download only ./dist/ folder and open index.html file for view the work (it's without custom fonts)
 
 For developers download all (./old-version/ not need) and follow the instructions [here] (https://github.com/sevenns/starting-template)
+
+# Install old-version
+
+For work old-version you need to install [GetSimple CMS](http://get-simple.info/) on your hosting
+
+After, move all files in ./old-version/ to root folder
+
+Next, go to http://your-site/admin and use next info for login:
+
+    admin
+    MtvE1SBQgC
+
+In control panel set e-detective theme and change main domain and password in settings
