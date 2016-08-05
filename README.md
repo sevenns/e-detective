@@ -5,19 +5,21 @@
 >Full img [here] (http://images.vfl.ru/ii/1470005282/838cb152/13575413.png)
 
 
-#### Task solvetion (PC Version)
+#### Task solvation (PC Version)
 ![e-detective-pc](http://images.vfl.ru/ii/1470006037/5fee555b/13575438.jpg)
 
-#### Task solvetion (Phone Version)
+#### Task solvation (Phone Version)
 ![e-detective-phone](http://images.vfl.ru/ii/1470006134/a8200515/13575442.jpg)
 ![e-detective-phone-2](http://images.vfl.ru/ii/1470006166/e49abe1c/13575443.jpg)
 
 
 # Requirements
 
-You need [nodejs] (https://nodejs.org/en/) with npm and bower
+You need [nodejs] (https://nodejs.org/en/) with npm, bower and gulp
 
     npm install -g bower
+    
+    npm install -g gulp
     
 For work bower you need to install [git] (https://git-scm.com/downloads) on your PC
 
