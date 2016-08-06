@@ -1,16 +1,10 @@
 # Overview
 
-![e-detective](http://images.vfl.ru/ii/1470005092/f8fa39f6/13575401.jpg)
+![e-detective](http://images.vfl.ru/ii/1470480568/a5c586d8/13639121.png)
+
+![e-detective-task](http://images.vfl.ru/ii/1470480608/fad6eaed/13639124.png)
 
 >Full img [here] (http://images.vfl.ru/ii/1470005282/838cb152/13575413.png)
-
-
-#### Task solvation (PC Version)
-![e-detective-pc](http://images.vfl.ru/ii/1470006037/5fee555b/13575438.jpg)
-
-#### Task solvation (Phone Version)
-![e-detective-phone](http://images.vfl.ru/ii/1470006134/a8200515/13575442.jpg)
-![e-detective-phone-2](http://images.vfl.ru/ii/1470006166/e49abe1c/13575443.jpg)
 
 
 # Requirements
