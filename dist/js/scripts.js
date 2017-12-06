@@ -1,35 +1,28 @@
 $(document).ready(function() {
-  setFullHeight($('.top-panel')); // Default top-panel height
-
    // OWL Carousel
   var carousel = $('.slider'),
       carouselNext = $('.slider-next'),
       carouselPrev = $('.slider-prev');
 
   carousel.owlCarousel({
-    singleItem: true,
+    items: 1,
     autoPlay: true
   });
 
   carouselNext.click(function() {
-    carousel.trigger('owl.next');
+    carousel.trigger('next.owl.carousel');
   });
 
   carouselPrev.click(function() {
-    carousel.trigger('owl.prev');
+    carousel.trigger('prev.owl.carousel');
+  });
+
+  $('.top-nav').on('click', 'a', function(event) {
+    if ($(this).attr('href')[0] === '#') {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top + 45
+      }, 500);
+    }
   });
 });
-
-//Anchor links
-$(document).on('click', 'a', function(event) {
-  event.preventDefault();
-  $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top + 45
-  }, 500);
-});
-
-function setFullHeight(elem, customBottomOffset = 0) {
-  var html = document.documentElement;
-
-  elem.css('height', html.clientHeight - customBottomOffset);
-}

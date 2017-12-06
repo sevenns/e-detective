@@ -36,7 +36,7 @@ gulp.task('html-minify', function() {
 gulp.task('scripts-minify', function() {
 	return gulp.src([
 		sourceDir + "libs/jquery/jquery.min.js",
-		sourceDir + "libs/owl-carousel/owl-carousel/owl.carousel.min.js",
+		sourceDir + "libs/owl.carousel/dist/owl.carousel.min.js",
 		sourceDir + "libs/e-detective-engine/resolution.lib.js",
 		sourceDir + "libs/e-detective-engine/resModule.lib.js",
 		sourceDir + "libs/jquery-slimscroll/jquery.slimscroll.min.js",

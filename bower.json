@@ -4,8 +4,7 @@
   "license": "ISC",
   "author": "e-detective.ru",
   "homepage": "e-detective.ru",
-  "dependencies": {
-  },
+  "dependencies": {},
   "keywords": [
     "e-detective"
   ],
@@ -18,11 +17,10 @@
     "tests"
   ],
   "devDependencies": {
-  	"jquery": "1.9.1",
-  	"bourbon": "^4.2.7",
-    "owl-carousel": "^1.3.2",
+    "jquery": "1.9.1",
     "jquery-slimscroll": "^1.3.8",
     "intense-images": "^1.0.0",
-    "font-awesome": "^4.6.3"
+    "font-awesome": "^4.6.3",
+    "owl.carousel": "owl-carousel2#^2.2.1"
   }
 }
